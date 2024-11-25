@@ -1,0 +1,8 @@
+Hi! My name is Ekwesi Joshua Chimeremeze, a passionate and enthusiastic front-end developer and software developer student. Currently pursuing a degree in Computer Science at Nnamdi Azikiwe University, Awka, I have honed my skills in HTML, CSS, and graphic design while actively expanding my knowledge in JavaScript and modern web technologies.
+
+Driven by a desire to create impactful digital solutions, I have worked on several projects, including cloning the original Netflix site, developing a Loruki webpage, and creating a responsive HTML/CSS login page. I am currently delving deeper into interactive JavaScript components, such as filter boxes and to-do lists.
+
+Apart from coding, I enjoy immersing myself in music, exploring games, and collaborating with peers to overcome challenges in programming. My goal is to transition into Web3 technologies and contribute to solving real-world problems through innovative tech solutions.
+
+Let’s connect and build something amazing together! 😊
+
