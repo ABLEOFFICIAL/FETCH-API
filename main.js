@@ -51,3 +51,23 @@ document.getElementById('client').addEventListener('click', function(){
         })
     })
 })
+
+document.getElementById('form').addEventListener('submit', function(e){
+    e.preventDefault();
+
+    let text = document.getElementById('text').value;
+    let formBody = document.getElementById('form-body').value;
+
+    fetch('https://jsonplaceholder.typicode.com/posts', {       //1st and 2nd parameters (url to fetch data from and a method)
+        method: 'POST',                                         //....
+        headers: {                                              //paremeter 3
+            'Accept': 'application/json, text/plain, */*',
+            'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({title: text, body: formBody})    // parameter 4
+    })
+    .then((res) => res.json())//response
+    .then((data) => {
+        console.log(data);
+    })
+})
