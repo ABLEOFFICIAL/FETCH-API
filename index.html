@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <title>Fetch API</title>
 </head>
-<body>
+<body class="container">
     <h1 class="header">
         Fetch API
     </h1>
-    <div>
-        <button id="btn">Get Post</button>
-        <button id="client">Get users</button>
-        <button id="about">About me</button>
-        <button id="post">Get post</button>
+    <div class="mb-4">
+        <button class='btn btn-success me-2' id="about">About me</button>
+        <button class='btn btn-primary me-2' id="btn">Get text</button>
+        <button class='btn btn-warning me-2' id="client">Get users</button>
+        <button class='btn btn-dark me-2' id="post">Get post</button>
     </div>
     
     <div>
-        <div id="about-space"></div>
+        <div class='container' id="about-space"></div>
     </div>
     <div>
         <div id="post-space"></div>
     </div>
-    <form id="form">
+    <form id="form" class="form-group">
         <div>
-        <input type="text" placeholder="Enter name" id="text">
+        <input type="text" placeholder="Enter name" id="text" class="form-control">
         </div>
         <div>
-        <textarea placeholder="Enter field..." id="form-body"></textarea>
+        <textarea placeholder="Enter field..." id="form-body" class="form-control"></textarea>
         </div>
-        <input type="submit" id="submit">
+        <input type="submit" id="submit" class='btn btn-secondary'>
     </form>
 
     <script src="main.js"></script>

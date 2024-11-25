@@ -27,9 +27,13 @@ document.getElementById('post').addEventListener('click', function(){
         let post = document.getElementById('post-space');
         post.innerHTML = '<h3>Users</h3>';
         data.forEach((item) => {
-            post.innerHTML += `<p>${item.title}</p>`
-            post.innerHTML += `<p>${item.userId}</p>`
-            post.innerHTML += `<p>${item.body}</p>`
+            post.innerHTML += `
+            <div class="card card-body">
+              <p>${item.title}</p>
+              <p>${item.userId}</p>
+              <p>${item.body}</p>
+            </div>
+            `
 
         })
     })
@@ -58,8 +62,8 @@ document.getElementById('form').addEventListener('submit', function(e){
     let text = document.getElementById('text').value;
     let formBody = document.getElementById('form-body').value;
 
-    fetch('https://jsonplaceholder.typicode.com/posts', {       //1st and 2nd parameters (url to fetch data from and a method)
-        method: 'POST',                                         //....
+    fetch('https://jsonplaceholder.typicode.com/posts', {//1st parameters (url to fetch data from)
+        method: 'POST',                                         // 2nd parameter....
         headers: {                                              //paremeter 3
             'Accept': 'application/json, text/plain, */*',
             'Content-Type': 'application/json',
